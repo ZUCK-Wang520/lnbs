@@ -1,0 +1,28 @@
+# 本地私密配置（含数据库、短信、COS、审核、实名等密钥）
+**/config/config.local.php
+config/config.local.php
+
+# 依赖与运行时数据
+**/vendor/
+public/vendor/
+public/uploads/
+public/storage/online_sessions.json
+public/storage/online_presence.json
+public/storage/site_logo.json
+*.log
+
+# 主机面板 / 证书校验 / 环境私有文件
+.user.ini
+**/.user.ini
+.well-known/
+**/.env
+**/.env.*
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+*.code-workspace

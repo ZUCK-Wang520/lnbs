@@ -1,0 +1,4 @@
+# 禁止浏览器直接访问 PHP 源码目录（Apache）
+<IfModule mod_authz_core.c>
+  Require all denied
+</IfModule>

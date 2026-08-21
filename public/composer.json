@@ -1,0 +1,12 @@
+{
+  "name": "lnbs/forum-public",
+  "description": "Forum public dependencies (Tencent COS)",
+  "require": {
+    "php": ">=8.0",
+    "qcloud/cos-sdk-v5": "^2.6"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  }
+}

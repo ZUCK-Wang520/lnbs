@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  # 页面里的资源路径为 /assets/...，实际文件在 public/assets/
+  RewriteRule ^assets/(.*)$ public/assets/$1 [L]
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule ^ index.php [L]
+</IfModule>
